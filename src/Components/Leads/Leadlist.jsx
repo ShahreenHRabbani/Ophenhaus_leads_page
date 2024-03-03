@@ -1,55 +1,53 @@
-import "./leadlist.css";
 
-function LeadsComponent({
-  name,
-  time,
-  projectlist,
-  hostname,
-  host_number,
-  date,
-  lead_priority,
-}) {
-  const project_name_list = projectlist.map((project) => {
-    return project.name;
-  });
+import "bootstrap/dist/css/bootstrap.min.css";
+
+// files
+import "./leadlist.css";
+import Card from '../Cards/card';
+import Jsondata from "../Leads/lead_list.json";
+import Navbar  from "../Navbar/navbar";
+
+
+function formatTime(timeVal) {
+  if (timeVal === 0) {
+    return "";
+  } else 
+  {
+    const mins = Math.floor(timeVal / 60);
+    const sec = timeVal - mins * 60;
+    return `${mins}m ${sec}s`;
+  }
+}
+
+function LeadComponent() {
+  const { host_country_code, host_phone_number, projects } = Jsondata;
+  const host_number = host_country_code + host_phone_number;
 
   return (
-    <>
-      <div className={lead_priority + "-lead main-card "}>
-        <div className="main-card-body">
-          <div className="card-header">
-            <div className="name">{name}</div>
-            <div className="time">{time}</div>
+     <div className="main-page">
+          <div className="main-header">
+            <Navbar />
           </div>
-          <div className="card-mainbody">
-            <ul className="card-list">
-              {project_name_list.map((item, index) => (
-                <b className="card-item"> {item} </b>
-              ))}
-            </ul>
-          </div>
-          <div className="card-footer">
-            <row className="lead-source">
-              <span>Direct -</span>
-              <b className="lead-name">{hostname}</b>
-            </row>
-            <row>
-              <div className="card-date">
-                <span className="ophs-icon icon-call"></span>
-                <span className="date">{date}</span>
-              </div>
-              <div className="card-contact">
-                <a className="btn btn-primary" href={"tel:+"+host_number}>
-                  {/* <span className="ophs-icon icon-call">{FaEnvelope}</span> */}
-                  <span className="btn-txt">Lead</span>
-                </a>
-              </div>
-            </row>
+          <div className="main-body">
+                <div></div>
+                <div className="leads">
+                            {Jsondata.map((item, index) => (
+                              <Card
+                                key={index}
+                                homebuyer_id = {item.homebuyer_id}
+                                name={item.homebuyer_name}
+                                time={formatTime(item.elapsed_time_seconds)}
+                                projectlist={item.projects}
+                                hostname={item.host_name}
+                                host_number={host_number}
+                                date={item.last_used_at_human}
+                                lead_priority={item.lead_priority}
+                              />
+                            ))}
+                </div>
           </div>
         </div>
-      </div>
-    </>
   );
 }
 
-export default LeadsComponent;
+export default LeadComponent ;

@@ -1,0 +1,31 @@
+
+.header{
+  box-shadow: inset 4px 0 0 #c07146;
+  min-width: 360px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #162436;
+  box-shadow: inset 4px 0 0 transparent;
+  opacity: 1;
+  padding: 32px 0 10px;
+  position: relative;
+  transition: 1s;
+}
+
+.backSection{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between!important;
+  height: 44px;
+  align-items: center;
+  position: relative;
+  margin-left: 50px;
+}
+.btn-back{
+ 
+  text-decoration: none;
+  color: white;
+      
+}
