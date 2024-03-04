@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // files
 import "./leadlist.css";
 import Card from '../Cards/card';
-import Jsondata from "../Leads/lead_list.json";
+import Jsondata from "./lead_list.json";
 import Navbar  from "../Navbar/navbar";
 
 
