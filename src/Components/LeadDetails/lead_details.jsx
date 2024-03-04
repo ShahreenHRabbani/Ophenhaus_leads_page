@@ -47,13 +47,13 @@ function LeadDetailsComponent() {
           <div className="engagement-stat">
             <span className="engagement-stat-header">Most seen Units</span>
             <span className="engagement-stat-data">
-              {Jsondata.data.projects[0].apartment_types[0].name}
+              {Jsondata.data.projects[0]?.apartment_types[0]?.name}
             </span>
           </div>
           <div className="engagement-stat">
             <span className="engagement-stat-header">Most seen Amenities</span>
             <span className="engagement-stat-data">
-              {Jsondata.data.projects[0].amenities[1].name}
+              {Jsondata.data.projects[0].amenities[1]?.name}
             </span>
           </div>
           <div className="engagement-stat">

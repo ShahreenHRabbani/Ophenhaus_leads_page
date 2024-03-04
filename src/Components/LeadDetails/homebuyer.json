@@ -2,172 +2,86 @@
   "status": 200,
   "message": "Lead Details",
   "data": {
-    "homebuyer_name": "Sajib HB",
-    "host_name": "Bayes",
-    "host_contact_number": "+919089800088",
-    "role_name": "red-admin",
+    "homebuyer_name": "Raima Tahini",
+    "host_name": "Yuvraj Marketing",
+    "host_contact_number": "+917658765668",
+    "role_name": "red-marketing",
     "lead_priority": "warm",
     "is_live": 0,
-    "recent_engagement": "12th Oct 2023",
+    "recent_engagement": "11th Dec 2023",
     "min_budget": 0,
     "max_budget": 0,
     "projects": [
       {
-        "project_id": 30,
-        "project_name": "Blox Tardeo",
-        "host_name": "Bayes",
-        "role_name": "red-admin",
-        "host_contact_number": "+919089800088",
-        "homebuyer_contact_number": null,
+        "project_id": 29,
+        "project_name": "Transcon Triumph",
+        "host_name": "Yuvraj Marketing",
+        "role_name": "red-marketing",
+        "host_contact_number": "+917658765668",
+        "project_lead_priority": "Lost",
+        "homebuyer_contact_number": "+916955541849",
         "favourite": 0,
-        "total_elapsed_seconds": 4714,
+        "total_elapsed_seconds": 20,
+        "apartment_types": [],
+        "amenities": [
+          {
+            "id": 7,
+            "name": "Building View",
+            "code": 7,
+            "total_elapsed_seconds": 20,
+            "image": "https://ophs-api-bucket.s3.ap-south-1.amazonaws.com/projects/29/buildings/T_UI_OPRJ-29_Transcon Triumph T2.jpg",
+            "project_name": "Transcon Triumph"
+          }
+        ],
+        "last_used_at": "11th Dec 23"
+      },
+      {
+        "project_id": 37,
+        "project_name": "Dosti Eastern Bay",
+        "host_name": "Yuvraj Marketing",
+        "role_name": "red-marketing",
+        "host_contact_number": "+917658765668",
+        "project_lead_priority": "warm",
+        "homebuyer_contact_number": "+916955541849",
+        "favourite": 0,
+        "total_elapsed_seconds": 73,
         "apartment_types": [
           {
-            "id": 64,
-            "name": "3BHK LOFT",
-            "code": "XX08",
-            "image": "https://ophs-api-bucket.s3.ap-south-1.amazonaws.com/projects/30/aparments/T_UI_OPRJ-30_apartment_XX08.jpg",
-            "total_elapsed_seconds": 607,
-            "project_name": "Blox Tardeo",
-            "elapsed_time": 15,
-            "min_price": 0,
-            "max_price": 0
-          },
-          {
-            "id": 57,
-            "name": "1BHK LOFT SMALL",
-            "code": "XX01",
-            "image": "https://ophs-api-bucket.s3.ap-south-1.amazonaws.com/projects/30/aparments/T_UI_OPRJ-30_apartment_XX01.jpg",
-            "total_elapsed_seconds": 529,
-            "project_name": "Blox Tardeo",
-            "elapsed_time": 9,
-            "min_price": 0,
-            "max_price": 0
-          },
-          {
-            "id": 60,
+            "id": 80,
             "name": "2BHK",
             "code": "XX04",
-            "image": "https://ophs-api-bucket.s3.ap-south-1.amazonaws.com/projects/30/aparments/T_UI_OPRJ-30_apartment_XX04.jpg",
-            "total_elapsed_seconds": 389,
-            "project_name": "Blox Tardeo",
-            "elapsed_time": 23,
-            "min_price": 0,
-            "max_price": 0
+            "image": "https://ophs-api-bucket.s3.ap-south-1.amazonaws.com/projects/37/apartments/T_UI_OPRJ-37_apartment_XX04.jpg",
+            "total_elapsed_seconds": 37,
+            "project_name": "Dosti Eastern Bay",
+            "elapsed_time": 12,
+            "min_price": 48549425,
+            "max_price": 48549425
           },
           {
-            "id": 62,
-            "name": "2BHK LOFT SMALL",
-            "code": "XX06",
-            "image": "https://ophs-api-bucket.s3.ap-south-1.amazonaws.com/projects/30/aparments/T_UI_OPRJ-30_apartment_XX06.jpg",
-            "total_elapsed_seconds": 285,
-            "project_name": "Blox Tardeo",
-            "elapsed_time": 15,
-            "min_price": 0,
-            "max_price": 0
-          },
-          {
-            "id": 61,
-            "name": "2BHK LOFT LARGE",
-            "code": "XX05",
-            "image": "https://ophs-api-bucket.s3.ap-south-1.amazonaws.com/projects/30/aparments/T_UI_OPRJ-30_apartment_XX05.jpg",
-            "total_elapsed_seconds": 252,
-            "project_name": "Blox Tardeo",
-            "elapsed_time": 15,
-            "min_price": 0,
-            "max_price": 0
-          },
-          {
-            "id": 58,
-            "name": "1BHK LARGE",
-            "code": "XX02",
-            "image": "https://ophs-api-bucket.s3.ap-south-1.amazonaws.com/projects/30/aparments/T_UI_OPRJ-30_apartment_XX02.jpg",
-            "total_elapsed_seconds": 197,
-            "project_name": "Blox Tardeo",
-            "elapsed_time": 2,
-            "min_price": 0,
-            "max_price": 23500000
-          },
-          {
-            "id": 59,
-            "name": "1BHK SMALL",
-            "code": "XX03",
-            "image": "https://ophs-api-bucket.s3.ap-south-1.amazonaws.com/projects/30/aparments/T_UI_OPRJ-30_apartment_XX03.jpg",
-            "total_elapsed_seconds": 158,
-            "project_name": "Blox Tardeo",
-            "elapsed_time": 15,
-            "min_price": 0,
-            "max_price": 24000000
+            "id": 77,
+            "name": "3BHK",
+            "code": "XX01",
+            "image": "https://ophs-api-bucket.s3.ap-south-1.amazonaws.com/projects/37/apartments/T_UI_OPRJ-37_apartment_XX01.jpg",
+            "total_elapsed_seconds": 22,
+            "project_name": "Dosti Eastern Bay",
+            "elapsed_time": 7,
+            "min_price": 16815000,
+            "max_price": 16815000
           }
         ],
         "amenities": [
           {
-            "id": 9,
+            "id": 11,
             "name": "Building View",
-            "code": 9,
-            "total_elapsed_seconds": 1239,
-            "image": "https://ophs-api-bucket.s3.ap-south-1.amazonaws.com/projects/30/buildings/T_UI_OPRJ-30_Tardeo.png",
-            "project_name": "Blox Tardeo"
-          },
-          {
-            "id": 73,
-            "name": "Rooftop Walkway",
-            "code": "AMN-11",
-            "image": "https://ophs-api-bucket.s3.ap-south-1.amazonaws.com/projects/30/common_amenities/T_UI_OPRJ-30_AMN-11.jpg",
-            "total_elapsed_seconds": 458,
-            "project_name": "Blox Tardeo"
-          },
-          {
-            "id": 63,
-            "name": "Ground Floor Lobby",
-            "code": "AMN-01",
-            "image": "https://ophs-api-bucket.s3.ap-south-1.amazonaws.com/projects/30/common_amenities/T_UI_OPRJ-30_AMN-01.jpg",
-            "total_elapsed_seconds": 174,
-            "project_name": "Blox Tardeo"
-          },
-          {
-            "id": 69,
-            "name": "Gymnasium",
-            "code": "AMN-07",
-            "image": "https://ophs-api-bucket.s3.ap-south-1.amazonaws.com/projects/30/common_amenities/T_UI_OPRJ-30_AMN-07.jpg",
-            "total_elapsed_seconds": 113,
-            "project_name": "Blox Tardeo"
-          },
-          {
-            "id": 65,
-            "name": "Amphitheater & Chess Area",
-            "code": "AMN-03",
-            "image": "https://ophs-api-bucket.s3.ap-south-1.amazonaws.com/projects/30/common_amenities/T_UI_OPRJ-30_AMN-03.jpg",
-            "total_elapsed_seconds": 109,
-            "project_name": "Blox Tardeo"
-          },
-          {
-            "id": 68,
-            "name": "Mini Theatre/ Library",
-            "code": "AMN-06",
-            "image": "https://ophs-api-bucket.s3.ap-south-1.amazonaws.com/projects/30/common_amenities/T_UI_OPRJ-30_AMN-06.jpg",
-            "total_elapsed_seconds": 93,
-            "project_name": "Blox Tardeo"
-          },
-          {
-            "id": 67,
-            "name": "Pool",
-            "code": "AMN-05",
-            "image": "https://ophs-api-bucket.s3.ap-south-1.amazonaws.com/projects/30/common_amenities/T_UI_OPRJ-30_AMN-05.jpg",
-            "total_elapsed_seconds": 66,
-            "project_name": "Blox Tardeo"
-          },
-          {
-            "id": 70,
-            "name": "Basketball Ring",
-            "code": "AMN-08",
-            "image": "https://ophs-api-bucket.s3.ap-south-1.amazonaws.com/projects/30/common_amenities/T_UI_OPRJ-30_AMN-08.jpg",
-            "total_elapsed_seconds": 45,
-            "project_name": "Blox Tardeo"
+            "code": 11,
+            "total_elapsed_seconds": 14,
+            "image": "https://ophs-api-bucket.s3.ap-south-1.amazonaws.com/projects/37/buildings/T_UI_OPRJ-37_Dosti Eastern Bay.jpg",
+            "project_name": "Dosti Eastern Bay"
           }
-        ]
+        ],
+        "last_used_at": "11th Dec 23"
       }
     ],
-    "all_total_elapsed_time": 4714
+    "all_total_elapsed_time": 93
   }
 }
