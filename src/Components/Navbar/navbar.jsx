@@ -1,14 +1,20 @@
 // import React from "react";
 import { Col, Row } from "react-bootstrap";
+import React , {useState} from "react"
 //images
 import openhausLogo from "../../Images/openhaus_logo.svg";
 
+import Form from "../Form/form"
+
 function Navbar() {
+  const [modal, setModal] = useState(false);
+  const toggleModal = () => setModal(!modal);
   return (
     <Row className="navbar">
       <Col></Col>
       <Col>
-        <Logo />
+        <Logo onClick={toggleModal} />
+        {modal && <Form />}
       </Col>
       <Col>
         <BellIcon />
@@ -16,10 +22,10 @@ function Navbar() {
     </Row>
   );
 }
-function Logo() {
+function Logo({onClick}) {
   return (
     <div>
-      <img src={openhausLogo} alt="Openhaus" ></img>
+      <img onClick={onClick} src={openhausLogo} alt="Openhaus"></img>
     </div>
   );
 }

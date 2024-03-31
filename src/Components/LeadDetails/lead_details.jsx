@@ -1,13 +1,19 @@
 import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import "./lead_details.css";
 import Jsondata from "./homebuyer.json";
 
 function LeadDetailsComponent() {
 
+   const navigate = useNavigate();
+
+  function handleAddBuilding() {
+     navigate(`/addbuilding`);
+  }
+
   function findHighestApartmentElapsedTimes(projects) {
     const resultArray = [];
-
     projects.forEach((project) => {
       const apartmentElapsedTimes = project.apartment_types.map(
         (apartment_types) => ({
@@ -65,6 +71,8 @@ function LeadDetailsComponent() {
     const formattedTime = `${minutes}min ${remainingSeconds}s`;
     return formattedTime;
   }
+
+
   const { homebuyer_id } = useParams();
   return (
     <>
@@ -126,6 +134,14 @@ function LeadDetailsComponent() {
           </div>
         </div>
       </div>
+      <br></br>
+      <button
+        type="button"
+        className="btn btn-primary"
+        onClick={() => handleAddBuilding()}
+      >
+        Add Building
+      </button>
     </>
   );
 }

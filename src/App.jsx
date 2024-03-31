@@ -7,15 +7,17 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import "./App.css";
 import LeadComponent from "./Components/Leads/leadlist"
 import LeadDetails from "./Components/LeadDetails/lead_details"
+import AddBuilding from "./Components/Addbuilding/addBuilding"
 
 
 
 
 function App() {
-  return ( 
+  return (
     <Routes>
-      <Route path="/"  element = {<LeadComponent/>} />
-      <Route path="/:homebuyer_id/details" element = {<LeadDetails/>} />
+      <Route path="/" element={<LeadComponent />} />
+      <Route path="/:homebuyer_id/details" element={<LeadDetails />} />
+      <Route path="/addbuilding" element={<AddBuilding />} />
     </Routes>
   );
 }
